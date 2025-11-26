@@ -1,9 +1,0 @@
-- where almost all data passes through
-- the "accumulator"
-- only 8-bit register that can be shifted by a 1 byte instruction
-	- what does this mean??
-	- only register that can be complemented, decimal adjusted, or negated with a single byte instruction
-- it's the source **and** destination of all 8-bit arithemtic and logical instructions
-	- except **INC** and **DEC**
-	- i.e. if you want to add two numbers together, you'd add some number in register A with a number in some other register, then the result is stored in register A
-- 

@@ -1,6 +1,0 @@
-- Stack Pointer register
-- Where values from PUSH, POP, CALL, RET are placed or taken
-- When gameboy is initialized, stack value is $FFFE
-	- why this value?
-- stack goes from **top to down**
-- when you push to the stack, it hangs down

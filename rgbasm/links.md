@@ -1,3 +1,0 @@
-- http://gameboy.mongenel.com/dmg/lesson1.html
-- https://github.com/pret/pokecrystal/wiki/Assembly-programming
-- 
