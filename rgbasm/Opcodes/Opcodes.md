@@ -1,0 +1,11 @@
+- An opcode is an instruction for the GameBoy CPU
+- Grouped into 8 categories:
+	- 8 and 16-bit loads
+	- 8-bit arithmetic and logical instructions
+	- 16-bit arithmetic instructions
+	- general purpose arithmetic and CPU control instructions
+	- rotate and shift instructions
+	- bit manip instructions
+	- jump instructions
+	- call and return instruction
+- 

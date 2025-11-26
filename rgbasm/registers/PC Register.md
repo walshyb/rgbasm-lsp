@@ -1,0 +1,5 @@
+- program counter register
+- tells the CPU the address of the next instruction to be fetched from memory
+- When GameBoy starts up, value is $0100
+	- this is where the header of a gameboy game is located
+	- 

@@ -1,0 +1,3 @@
+- generally used as 16-bit registers for holding destination addresses in moving data between addresses
+- also can be used for operations
+- 

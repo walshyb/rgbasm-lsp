@@ -1,0 +1,15 @@
+- special registers
+- extensively used for indirect addressing as a register pair **HL**
+	- *Indirect addressing* is when instead of specifying a specific address for an operation, you can use the 16-bit value in HL
+- good for calculations on addresses
+- only register pair that can be used indirectly in the instructions:
+	- ADC
+	- ADD
+	- AND
+	- CP
+	- DEC
+	- INC
+	- OR
+	- SUB
+	- XOR
+	- 
