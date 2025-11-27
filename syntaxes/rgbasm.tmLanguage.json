@@ -1,0 +1,87 @@
+{
+  "scopeName": "source.rgbasm",
+  "name": "RGBASM",
+  "patterns": [
+    { "include": "#comment" },
+    { "include": "#label" },
+    { "include": "#directive" },
+    { "include": "#instruction" },
+    { "include": "#register" },
+    { "include": "#numbers" },
+    { "include": "#brackets" }
+  ],
+
+  "repository": {
+    "comment": {
+      "name": "comment.line.semicolon.rgbasm",
+      "match": ";.*$"
+    },
+
+    "label": {
+      "patterns": [
+        {
+          "name": "entity.name.label.rgbasm",
+          "match": "^[A-Za-z_\\.][A-Za-z0-9_\\.]*:(?=\\s|$)"
+        }
+      ]
+    },
+
+    "directive": {
+      "patterns": [
+        {
+          "name": "keyword.control.directive.rgbasm",
+          "match": "\\.(org|db|dw|ds|equ|include|incbin|macro|endm|rept|endr|rsset|rsreset)\\b",
+          "flags": "i"
+        }
+      ]
+    },
+
+    "instruction": {
+      "patterns": [
+        {
+          "name": "keyword.instruction.rgbasm",
+          "match": "\\b(ADC|ADD|AND|BIT|CALL|CCF|CP|CPL|DAA|DEC|DI|EI|HALT|INC|JP|JR|LD|LDH|NOP|OR|POP|PUSH|RES|RET|RETI|RL|RLA|RLC|RLCA|RR|RRA|RRC|RRCA|RST|SBC|SCF|SET|SLA|SRA|SRL|STOP|SUB|SWAP|XOR)\\b",
+          "flags": "i"
+        }
+      ]
+    },
+
+    "register": {
+      "patterns": [
+        {
+          "name": "variable.other.register.rgbasm",
+          "match": "\\b(A|B|C|D|E|H|L|AF|BC|DE|HL|SP|PC)\\b",
+          "flags": "i"
+        }
+      ]
+    },
+
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.hex.rgbasm",
+          "match": "\\$[0-9A-Fa-f]+"
+        },
+        {
+          "name": "constant.numeric.binary.rgbasm",
+          "match": "%[01]+"
+        },
+        {
+          "name": "constant.numeric.decimal.rgbasm",
+          "match": "\\b[0-9]+\\b"
+        }
+      ]
+    },
+
+    "brackets": {
+      "patterns": [
+        {
+          "name": "meta.brackets.rgbasm",
+          "match": "\\[[^\\]]*\\]"
+        }
+      ]
+    }
+  },
+
+  "scopeName": "source.rgbasm"
+}

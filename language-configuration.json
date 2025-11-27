@@ -1,0 +1,25 @@
+{
+  "extensions": ["asm", "rgbasm"],
+  "comments": {
+    "lineComment": ";"
+  },
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "folding": {
+    "markers": {
+      "start": "^\\s*\\.(macro|rept)\\b",
+      "end": "^\\s*\\.(endm|endr)\\b"
+    }
+  },
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*\\.(macro|rept)\\b.*$",
+    "decreaseIndentPattern": "^\\s*\\.(endm|endr)\\b.*$",
+    "indentationSwitchCase": false
+  },
+  "wordPatterns": [
+    "(-?\\d*\\.\\d+|[^\\s\\{\\}\\(\\)\\[\\]\\*\\-:,\\.\\;\\!\\?]+)"
+  ]
+}
